@@ -309,7 +309,7 @@ ip-адреси, що знаходиться поза межами КПІ Бон
 
 \section{Комп'ютерний практикум №1.}
 
-\textbf{Тема}: Арифметичні операції. \textbf{Мета роботи}:
+\textbf{Тема}:Арифметичні операції. \textbf{Мета роботи}:
 Ознайомитися з базовими інструкціями для виконання арифметичних
 операцій.
 
@@ -471,165 +471,135 @@ addi $s3, $s3, 4 # $s3= $s3+ 4
 
 \begin{enumerate}[1.]
 \item
-  Збільшити на 2. Збільшити вміст регістру \$a0 на 2.
-\item
-  Зменшити на 2. Зменшити вміст регістра \$a0 на 2.
-\item
-  Сума. Дадати вміст регістрів \$a0 та \$a1 і записати результат в
-  \$v0.
-\item
-  Віднімання. Відняти вміст регістру \$a1 від вмісту регістра \$a0 і
-  записати результат в \$v0.
-\item
-  Множення. Перемножити вміст регістрів \$a0 і \$a1 та записати
-  результат в \$v0.
-\item
-  Ділення. Розділити вміст регістру \$a0 на вміст регістру \$a1 і
-  записати цілу частину до \$v0.
+  \textbf{Добуток та інкремент} Добуток значення регістру \$a1,
+  зменшеного на 3, та значення регістру \$a2, збільшеного на 2,
+  зберегти у регістр \$v0. Збільшити вміст регістру \$a0 на 2.
+  \begin{itemize}
+  \item
+    Приклад 1:
 
-\item
-  Збільшити на 2. Збільшити вміст регістру \$a0 на 2.
-\item
-  Приклад 1: * \$a0:65:67
-\item
-  Приклад 2: * \$a0:9:11
-\item
-  Приклад 3: * \$a0:23:25
-\item
-  Зменшити на 2.*Зменшити вміст регістра \$a0 на 2.
-\item
-  Приклад 1:
-  \begin{itemize}
+    \$a0: 65 =\textgreater{} 67 \$a1: 3 \$a2: --1 \$v0: =\textgreater{}
+    0
+
   \item
-    \$a0:65:63
+    Приклад 2:
+
+    \$a0: 9 =\textgreater{} 11 \$a1: 5 \$a2: --2 \$v0: =\textgreater{}
+    0
+
+  \item
+    Приклад 3:
+
+    \$a0: 23 =\textgreater{} 25 \$a1: 5 \$a2: 0 \$v0: =\textgreater{}
+    4
+
   \end{itemize}
 \item
-  Приклад 2:
-  \begin{itemize}
-  \item
-    \$a0:9:7
-  \end{itemize}
-\item
-  Приклад 3:
-  \begin{itemize}
-  \item
-    \$a0:23:21
-  \end{itemize}
-\item
-  \emph{Сума.}Дадати вміст регістрів \$a0 та \$a1 і записати
-  результат в \$v0.
+  \textbf{Остача та декремент} Зберегти у регістр \$v0 остачу від
+  ділення значення регістру \$a1, збільшеного на 5, на значення
+  регістру \$a2, збільшеного вдвічі. Зменшити вміст регістра \$a0 на
+  2.
   \begin{itemize}
   \item
     Приклад 1:
-  \item
-    \$a0:65:65
-  \item
-    \$a1:3:3
-  \item
-    \$v0::68
+
+    \$a0: 65 =\textgreater{} 63 \$a1: 5 \$a2: 3 \$v0: =\textgreater{}
+    4
+
   \item
     Приклад 2:
-  \item
-    \$a0:9:9
-  \item
-    \$a1:17:17
-  \item
-    \$v0::26
+
+    \$a0: 9 =\textgreater{} 7 \$a1: 11 \$a2: 4 \$v0: =\textgreater{} 0
+
   \item
     Приклад 3:
-  \item
-    \$a0:23:23
-  \item
-    \$a1:5:5
-  \item
-    \$v0::28
+
+    \$a0: 23 =\textgreater{} 21 \$a1: 102 \$a2: 64 \$v0:
+    =\textgreater{} 107
+
   \end{itemize}
 \item
-  \emph{Віднімання.}Відняти вміст регістру \$a1 від вмісту регістра
-  \$a0 і записати результат в \$v0.
+  \textbf{Сума і добуток} Дадати вміст регістрів \$a0, \$a1, \$a2,
+  помножити його на вміст регістру \$a3 і записати результат в \$v0.
   \begin{itemize}
   \item
     Приклад 1:
-  \item
-    \$a0:65:65
-  \item
-    \$a1:3:3
-  \item
-    \$v0::62
+
+    \$a0: 1 \$a1: 2 \$a2: 3 \$a3: 4 \$v0: =\textgreater{} 24
+
   \item
     Приклад 2:
-  \item
-    \$a0:9:9
-  \item
-    \$a1:17:17
-  \item
-    \$v0::--8
+
+    \$a0: 1 \$a1: --2 \$a2: 3 \$a3: --4 \$v0: =\textgreater{} --8
+
   \item
     Приклад 3:
-  \item
-    \$a0:23:23
-  \item
-    \$a1:5:5
-  \item
-    \$v0::18
+
+    \$a0: 11 \$a1: 12 \$a2: 13 \$a3: 33 \$v0: =\textgreater{} 1188
+
   \end{itemize}
 \item
-  \emph{Множення.}Перемножити вміст регістрів \$a0 і \$a1 та записати
-  результат в \$v0.
+  \textbf{Різниця і остача} Відняти вміст регістру \$a1 від вмісту
+  регістра \$a0 і записати остачу від ділення результата на вміст
+  регістру \$a2 в регістр \$v0.
   \begin{itemize}
   \item
     Приклад 1:
-  \item
-    \$a0:13:13
-  \item
-    \$a1:3:3
-  \item
-    \$v0::39
+
+    \$a0: 65 \$a1: 3 \$a2: 33 \$v0: =\textgreater{} 29
+
   \item
     Приклад 2:
-  \item
-    \$a0:11:11
-  \item
-    \$a1:12:12
-  \item
-    \$v0::132
+
+    \$a0: 65 \$a1: 65 \$a2: 33 \$v0: =\textgreater{} 0
+
   \item
     Приклад 3:
-  \item
-    \$a0:25:25
-  \item
-    \$a1:4:4
-  \item
-    \$v0::100
+
+    \$a0: 65 \$a1: 32 \$a2: 33 \$v0: =\textgreater{} 0
+
   \end{itemize}
 \item
-  \emph{Ділення.}Розділити вміст регістру \$a0 на вміст регістру \$a1
-  і записати цілу частину до \$v0.
+  \textbf{Множення} Перемножити вміст регістрів \$a0, \$a1, \$a2 та
+  записати результат, зменшений на значення регістру \$a3 у регістр
+  \$v0.
   \begin{itemize}
   \item
     Приклад 1:
-  \item
-    \$a0:12:12
-  \item
-    \$a1:3:3
-  \item
-    \$v0::4
+
+    \$a0: 1 \$a1: 2 \$a2: 3 \$a3: 5 \$v0: =\textgreater{} 1
+
   \item
     Приклад 2:
+
+    \$a0: 11 \$a1: 12 \$a2: 2 \$a3: 264 \$v0: =\textgreater{} 0
+
   \item
-    \$a0:117:117
+    Приклад \$1: \$a0: 5 \$a1: 4 \$a2: 0 \$a3: --8 \$v0:
+    =\textgreater{} 8
+
+  \end{itemize}
+\item
+  \textbf{Ділення} Остачу від ділення вмісту регістру \$a0 на вміст
+  регістру \$a1 використати як дільник при обчисленні цілої частини
+  при діленні значення регістру \$a2. Результат зберегти у регістр
+  \$v0.
+  \begin{itemize}
   \item
-    \$a1:7:7
+    Приклад 1:
+
+    \$a0: 3 \$a1: 2 \$a2: 5 \$v0: =\textgreater{} 5
+
   \item
-    \$v0::16
+    Приклад 2:
+
+    \$a0: 13 \$a1: 8 \$a2: 55 \$v0: =\textgreater{} 11
+
   \item
     Приклад 3:
-  \item
-    \$a0:43:43
-  \item
-    \$a1:4:4
-  \item
-    \$v0::10
+
+    \$a0: 1023 \$a1: 1024 \$a2: 1022 \$v0: =\textgreater{} 0
+
   \end{itemize}
 \end{enumerate}
 \section{Комп'ютерний практикум №2}
@@ -871,124 +841,151 @@ sw $t0,48( $s3 ) # stores h+ A[8] back into A[12]
 \end{enumerate}
 \subsection{Варіанти завдань:}
 
-FIXME 1. v0 = \emph{a0+}a1-*a2. Скласти вміст двух комірок памяті
-по адресам із регістрів \$a0 та \$a1, відняти від суми вміст
-комірки памяті по адресі із регістра \$a2, результат записати в
-\$v0.
-
-\begin{verbatim}
-  Варіанти завдань
-\end{verbatim}
 \begin{enumerate}[1.]
 \item
-  \emph{(!).}(!)
+  \textbf{Сума та різниця}. Скласти вміст двух комірок памяті за
+  адресами із регістрів \$a0 та \$a1, відняти від суми вміст комірки
+  памяті за адресою із регістра \$a2 з урахуванням зсуву на 12 байт,
+  результат записати у \$v0.
   \begin{itemize}
   \item
     Приклад 1:
+
+    \$a0: 0x100 \$a1: 0x104 \$a2: 0x0FC 0x100: 17 0x104: 13 0x108: 5
+    \$v0: =\textgreater{} 25
+
   \item
     Приклад 2:
+
+    \$a0: 0x100 \$a1: 0x104 \$a2: 0x108 0x100: 9 0x104: --3 0x114: 6
+    \$v0: =\textgreater{} 0
+
   \item
     Приклад 3:
+
+    \$a0: 0x104 \$a1: 0x100 \$a2: 0x200 0x100: --5 0x104: 1 0x20C: --14
+    \$v0: =\textgreater{} 10
+
   \end{itemize}
 \item
-  \emph{(!).}(!)
+  \textbf{Усереднення} Скласти вміст п'яти слів памяті, що
+  знаходяться за адресою із регістра \$a0, у діапазоні
+  адреса--8..адреса+8, суму записати у \$v0, середнє арифметичне
+  записати у комірку пам'яті за адресою із регістра \$a0.
   \begin{itemize}
   \item
     Приклад 1:
+
+    \$a0: 0x108 0x100: 1 0x104: 2 0x108: 3 0x10C: 4 0x110: 5 \$v0:
+    =\textgreater{} 15
+
   \item
     Приклад 2:
+
+    \$a0: 0x108 0x100: 2 0x104: 1 0x108: 4 =\textgreater{} 0 0x10C: --1
+    0x110: --2 \$v0: =\textgreater{} 4
+
   \item
     Приклад 3:
+
+    \$a0: 0x208 0x200: 3 0x204: 5 0x208: 8 =\textgreater{} 10 0x20C: 13
+    0x210: 21 \$v0: =\textgreater{} 50
+
   \end{itemize}
 \item
-  \emph{(!).}(!)
+  \textbf{Інкремент} Збільшити значення у пам'яті за адресами з
+  регістрів \$a0 (застосувати зсув +8 байт) та \$a1 (зсув --8 байт),
+  на значення з регістрів \$a2 та \$a3 відповідно.
   \begin{itemize}
   \item
     Приклад 1:
+
+    \$a0: 0x0F8 \$a1: 0x208 \$a2: 1 \$a3: --1 0x100: 0 =\textgreater{}
+    1 0x200: 0 =\textgreater{} --1
+
   \item
     Приклад 2:
+
+    \$a0: 0x200 \$a1: 0x200 \$a2: 1 \$a3: --1 0x208: 0 =\textgreater{}
+    1 0x1F8: 0 =\textgreater{} --1
+
   \item
     Приклад 3:
+
+    \$a0: 0x1F8 \$a1: 0x208 \$a2: 128 \$a3: --128 0x200: 1024
+
   \end{itemize}
 \item
-  \emph{(!).}(!)
+  \textbf{Обмін} Обміняти місцями у пам'яті значення за адресами з
+  регістрів \$a0 та \$a1, застосувавши зсув обох адрес на --16 байт.
+  Добуток значень помістити у регістр \$v0.
   \begin{itemize}
   \item
     Приклад 1:
+
+    \$a0: 0x110 \$a1: 0x210 0x100: 2 =\textgreater{} 1 0x200: 1
+    =\textgreater{} 2 \$v0: =\textgreater{} 2
+
   \item
     Приклад 2:
+
+    \$a0: 0x110 \$a1: 0x110 0x100: 5 \$v0: =\textgreater{} 25
+
   \item
     Приклад 3:
+
+    \$a0: 0x110 \$a1: 0x210 0x100: 0 =\textgreater{} 768 0x200: 768
+    =\textgreater{} 0 \$v0: =\textgreater{} 0
+
   \end{itemize}
 \item
-  v0 = \emph{a0+}a1-*a2.Скласти вміст двух комірок памяті по адресам
-  із регістрів \$a0 та \$a1, відняти від суми вміст комірки памяті по
-  адресі із регістра \$a2, результат записати в \$v0.
+  \textbf{Добуток} Обчислити добуток значень, розташованих за
+  адресами у регістрах \$a0, \$a1 та \$a2, зі зсувами --4, 0 та 4
+  байти відповідно, результат помістити у регістр \$v0.
   \begin{itemize}
   \item
     Приклад 1:
-    \begin{itemize}
-    \item
-      \$a0:0x100:0x100
-    \item
-      \$a1:0x104:0x104
-    \item
-      \$a2:0x108:0x108
-    \item
-      \$v0::25
-    \item
-      0x100:17:17
-    \item
-      0x104:13:13
-    \item
-      0x108:5:5
-    \end{itemize}
+
+    \$a0: 0x100 \$a1: 0x100 \$a2: 0x100 0x0FC: 2 0x100: 3 0x104: 5
+    \$v0: =\textgreater{} 30
+
   \item
     Приклад 2:
-    \begin{itemize}
-    \item
-      \$a0:0x100:0x100
-    \item
-      \$a1:0x104:0x104
-    \item
-      \$a2:0x108:0x108
-    \item
-      \$v0::0
-    \item
-      0x100:9:9
-    \item
-      0x104:--3:--3
-    \item
-      0x108:6:6
-    \end{itemize}
+
+    \$a0: 0x104 \$a1: 0x100 \$a2: 0x0FC 0x100: 3 \$v0: =\textgreater{}
+    27
+
   \item
     Приклад 3:
-    \begin{itemize}
-    \item
-      \$a0:0x100:0x100
-    \item
-      \$a1:0x104:0x104
-    \item
-      \$a2:0x108:0x108
-    \item
-      \$v0::10
-    \item
-      0x100:1:1
-    \item
-      0x104:--5:--5
-    \item
-      0x108:--14:--14
-    \end{itemize}
+
+    \$a0: 0x200 \$a1: 0x200 \$a2: 0x200 0x1FC: 2 0x200: --3 0x204: 5
+    \$v0: =\textgreater{} --30
+
   \end{itemize}
 \item
-  \emph{(!).}(!)
+  \textbf{Подвійна адресація} Обчислити суму значень, адреси яких
+  розташовані за адресами у регістрах \$a0, \$a1 та \$a2, зі зсувами
+  --4, 0 та 4 байти відповідно, результат помістити у регістр \$v0.
   \begin{itemize}
   \item
     Приклад 1:
+
+    \$a0: 0x100 \$a1: 0x100 \$a2: 0x100 0x0FC: 0x200 0x100: 0x204
+    0x104: 0x208 0x200: 1 0x204: 2 0x208: 4 \$v0: =\textgreater{} 7
+
   \item
-    Приклад 2:
+    Приклад \$1:
+
+    \$a0: 0x104 \$a1: 0x100 \$a2: 0x0FC 0x100: 0x200 0x200: 1 \$v0:
+    =\textgreater{} 3
+
   \item
     Приклад 3:
+
+    \$a0: 0x100 \$a1: 0x200 \$a2: 0x300 0x0FC: 0x408 0x200: 0x404
+    0x304: 0x400 0x400: --1 0x404: 2 0x408: --4 \$v0: =\textgreater{}
+    --3
+
   \end{itemize}
 \end{enumerate}
 \section{Комп'ютерний практикум №3}
@@ -1167,213 +1164,111 @@ unsigned (situ) та set on less than immediate unsigned
 
 \begin{enumerate}[1.]
 \item
-  Перевірка на рівність. Присвоїти \$v0 значення 1, якщо регістри
-  \$a0 та \$a1 рівні, в іншому випадку присвоїти значення 0.
-\item
-  Визначення відсутності спільних бітів. Виконати «логічне і»
-  регістрів \$a0 та \$a1, у випадку, якщо результат рівний 0, то
-  записати в \$v0 1, інакше записати 0.
-\item
-  Перевірка рівності комірок памяті. Встановити \$v0 в 1, якщо дані
-  комірк памяті по адресам із рестрів \$a0 та \$a1 рівні, інакше
-  встановити \$v0 в 0.
-\item
-  Додавання і перевірка на нерівність. Збільшити вміст регістра \$a0
-  на 2, у випадку, якщо результат більше 0, записати в \$v0 1, інакше
-  записати 0.
-\item
-  Віднімання та перевірка на нерівність. Зменшити вміст регістра \$a0
-  на 3, в випадку, якщо результат менше 0, записати в \$v0 1, інакше
-  – записати 0.
+  \textbf{Перевірка на рівність} Присвоїти \$v0 значення 1, якщо
+  регістри \$a0 та \$a1 рівні, в іншому випадку присвоїти значення 0.
+  \begin{itemize}
+  \item
+    Приклад 1:
 
+    \$a0: 19 \$a1: 19 \$v0: =\textgreater{} 1
+
+  \item
+    Приклад 2:
+
+    \$a0: 25 \$a1: 2 \$v0: =\textgreater{} 0
+
+  \item
+    Приклад 3:
+
+    \$a0: 14 \$a1: --14 \$v0: =\textgreater{} 0
+
+  \end{itemize}
 \item
-  Перевірка на рівність. Присвоїти \$v0значення 1, якщо регістри \$a0
-  та \$a1 рівні, в іншому випадку присвоїти значення 0.
+  \textbf{Відсутність спільних бітів} Виконати «логічне і» регістрів
+  \$a0 та \$a1, у випадку, якщо результат рівний 0, то записати в
+  \$v0 1, інакше записати 0.
   \begin{itemize}
   \item
     Приклад 1:
-    \begin{itemize}
-    \item
-      \$a0:19:19\\
-    \item
-      \$a1:19:19
-    \item
-      \$v0::1
-    \end{itemize}
+
+    \$a0: 12 \$a1: 48 \$v0: =\textgreater{} 1
+
   \item
     Приклад 2:
-    \begin{itemize}
-    \item
-      \$a0:25:25
-    \item
-      \$a1:2:2
-    \item
-      \$v0::0
-    \end{itemize}
+
+    \$a0: 10 \$a1: 5 \$v0: =\textgreater{} 1
+
   \item
     Приклад 3:
-    \begin{itemize}
-    \item
-      \$a0:14:14
-    \item
-      \$a1:--14:--14
-    \item
-      \$v0::0
-    \end{itemize}
+
+    \$a0: 111 \$a1: 2 \$v0: =\textgreater{} 0
+
   \end{itemize}
 \item
-  Визначення відсутності спільних бітів. Виконати «логічне і»
-  регістрів \$a0 та \$a1, у випадку, якщо результат рівний 0, то
-  записати в \$v0 1,інакше записати 0.
+  \textbf{Рівність слів памяті} Встановити \$v0в 1, якщо дані комірк
+  памяті за адресами із рестрів \$a0 та \$a1 рівні, інакше встановити
+  \$v0в 0.
+
   \begin{itemize}
   \item
     Приклад 1:
-    \begin{itemize}
-    \item
-      \$a0:12:12
-    \item
-      \$a1:48:48
-    \item
-      \$v0::1
-    \end{itemize}
+
+    \$a0: 0x100 \$a1: 0x104 \$v0: =\textgreater{} 1 0x100: 25 0x104:
+    25
+
   \item
     Приклад 2:
-    \begin{itemize}
-    \item
-      \$a0:10:10
-    \item
-      \$a1:5:5
-    \item
-      \$v0::1
-    \end{itemize}
+
+    \$a0: 0x100 \$a1: 0x104 \$v0: =\textgreater{} 0 0x100: 0 0x104: 10
+
   \item
     Приклад 3:
-    \begin{itemize}
-    \item
-      \$a0:11:11
-    \item
-      \$a1:2:2
-    \item
-      \$v0::0
-    \end{itemize}
+
+    \$a0: 0x400 \$a1: 0x800 \$v0: =\textgreater{} 1 0x400: 117 0x800:
+    117
+
   \end{itemize}
 \item
-  Перевірка рівності комірок памяті. Встановити \$v0в 1, якщо дані
-  комірк памяті по адресам із рестрів $a0 та$a1рівні, інакше
-  встановити \$v0в 0.
-  \begin{itemize}
-  \item
-    Приклад 1:
-    \begin{itemize}
-    \item
-      \$a0:0x100:0x100
-    \item
-      \$a1:0x104:0x104
-    \item
-      \$v0::1
-    \item
-      0x100:25:25
-    \item
-      0x104:25:25
-    \end{itemize}
-  \item
-    Приклад 2:
-    \begin{itemize}
-    \item
-      \$a0:0x100:0x100
-    \item
-      \$a1:0x104:0x104
-    \item
-      \$v0::0
-    \item
-      0x100:0:0
-    \item
-      0x104:10:10
-    \end{itemize}
-  \item
-    Приклад 3:
-    \begin{itemize}
-    \item
-      \$a0:0x100:0x100
-    \item
-      \$a1:0x104:0x104
-    \item
-      \$v0::1
-    \item
-      0x100:117:117
-    \item
-      0x104:117:117
-    \end{itemize}
-  \end{itemize}
-\item
-  Додавання і перевірка на нерівність. Збільшити вміст регістра
-  \$a0на 2, у випадку, якщо результат більше 0, записати в \$v0 1,
-  інакше записати 0.
-  \begin{itemize}
-  \item
-    Приклад 1:
-    \begin{itemize}
-    \item
-      \$a0:5:7
-    \item
-      \$v0::1
-    \end{itemize}
-  \item
-    Приклад 2:
-    \begin{itemize}
-    \item
-      \$a0:--2:0
-    \item
-      \$v0::0
-    \end{itemize}
-  \item
-    Приклад 3:
-    \begin{itemize}
-    \item
-      \$a0:1:3
-    \item
-      \$v0::1
-    \end{itemize}
-  \end{itemize}
-\item
-  Віднімання та перевірка на нерівність. Зменшити вміст регістра \$a0
-  на 3, в випадку, якщо результат менше 0, записати в \$v01, інакше –
+  \textbf{Інкремент і нерівність} Збільшити вміст регістра \$a0 на 2,
+  у випадку, якщо результат більше 0, записати в \$v0 1, інакше
   записати 0.
   \begin{itemize}
   \item
     Приклад 1:
-    \begin{itemize}
-    \item
-      \$a0:2:--1
-    \item
-      \$v0::1
-    \end{itemize}
+
+    \$a0: 5 =\textgreater{} 7 \$v0: =\textgreater{} 1
+
   \item
     Приклад 2:
-    \begin{itemize}
-    \item
-      \$a0:3:0
-    \item
-      \$v0::0
-    \end{itemize}
+
+    \$a0: --2 =\textgreater{} 0 \$v0: =\textgreater{} 0
+
   \item
     Приклад 3:
-    \begin{itemize}
-    \item
-      \$a0:--5:--8
-    \item
-      \$v0::1
-    \end{itemize}
+
+    \$a0: --8 =\textgreater{} --6 \$v0: =\textgreater{} 0
+
   \end{itemize}
 \item
-  \emph{(!).}(!)
+  \textbf{Віднімання та нерівність} Зменшити вміст регістра \$a0 на
+  значення регістру \$a1, в випадку, якщо результат менше значення
+  регістру \$a1, записати в \$v0 1, інакше записати 0.
   \begin{itemize}
   \item
     Приклад 1:
+
+    \$a0: 2 =\textgreater{} --1 \$a1: 3 \$v0: =\textgreater{} 1
+
   \item
     Приклад 2:
+
+    \$a0: 3 =\textgreater{} 0 \$a1: 0 \$v0: =\textgreater{} 0
+
   \item
     Приклад 3:
+
+    \$a0: --25 =\textgreater{} --22 \$a1: --3 \$v0: =\textgreater{} 1
+
   \end{itemize}
 \end{enumerate}
 \section{Комп'ютерний практикум №4}
@@ -1390,7 +1285,7 @@ unsigned (situ) та set on less than immediate unsigned
 \begin{verbatim}
 while ( save[i] == k) {
    i += 1;
- }
+}
 \end{verbatim}
 Припустимо, щл i та k відповідають регістрам \$s3 та \$s5, а перший
 елемент масиву (базова адреса) зберігається в регістрі \$s6. Який
@@ -1508,69 +1403,69 @@ Exit:
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:5:5
+      \$a1: 5
     \item
-      \$v0::5
+      \$v0: =\textgreater{} 5
     \item
-      0x100:1:1
+      0x100: 1
     \item
-      0x104:2:2
+      0x104: 2
     \item
-      0x108:3:3
+      0x108: 3
     \item
-      0x10C:4:4
+      0x10C: 4
     \item
-      0x110:5:5
+      0x110: 5
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:7:7
+      \$a1: 7
     \item
-      \$v0::0
+      \$v0: =\textgreater{} 0
     \item
-      0x100:--1:--1
+      0x100: --1
     \item
-      0x104:--2:--2
+      0x104: --2
     \item
-      0x108:--7:--7
+      0x108: --7
     \item
-      0x10C:0:0
+      0x10C: 0
     \item
-      0x110:--11:--11
+      0x110: --11
     \item
-      0x114:--16:--16
+      0x114: --16
     \item
-      0x118:--9:--9
+      0x118: --9
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:7:7
+      \$a1: 7
     \item
-      \$v0::--1
+      \$v0: =\textgreater{} --1
     \item
-      0x100:--4:--4
+      0x100: --4
     \item
-      0x104:--3:--3
+      0x104: --3
     \item
-      0x108:--7:--7
+      0x108: --7
     \item
-      0x10C:--12:--12
+      0x10C: --12
     \item
-      0x110:--1:--1
+      0x110: --1
     \item
-      0x114:--21:--21
+      0x114: --21
     \item
-      0x118:--9:--9
+      0x118: --9
     \end{itemize}
   \end{itemize}
 \item
@@ -1581,65 +1476,65 @@ Exit:
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:5:5
+      \$a1: 5
     \item
-      \$v0::1
+      \$v0: =\textgreater{} 1
     \item
-      0x100:1:1
+      0x100: 1
     \item
-      0x104:2:2
+      0x104: 2
     \item
-      0x108:3:3
+      0x108: 3
     \item
-      0x10C:8:8
+      0x10C: 8
     \item
-      0x110:5:5
+      0x110: 5
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:6:6
+      \$a1: 6
     \item
-      \$v0::3
+      \$v0: =\textgreater{} 3
     \item
-      0x100:--1:--1
+      0x100: --1
     \item
-      0x104:2:2
+      0x104: 2
     \item
-      0x108:3:3
+      0x108: 3
     \item
-      0x10C:--1:--1
+      0x10C: --1
     \item
-      0x110:5:5
+      0x110: 5
     \item
-      0x114:--1:--1
+      0x114: --1
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:6:6
+      \$a1: 6
     \item
-      \$v0::6
+      \$v0: =\textgreater{} 6
     \item
-      0x100:8:8
+      0x100: 8
     \item
-      0x104:8:8
+      0x104: 8
     \item
-      0x108:8:8
+      0x108: 8
     \item
-      0x10C:8:8
+      0x10C: 8
     \item
-      0x110:8:8
+      0x110: 8
     \item
-      0x114:8:8
+      0x114: 8
     \end{itemize}
   \end{itemize}
 \item
@@ -1651,65 +1546,65 @@ Exit:
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:5:5
+      \$a1: 5
     \item
-      \$a2:3:3
+      \$a2: 3
     \item
-      \$v0::102
+      \$v0: =\textgreater{} 102
     \item
-      0x100:1:1
+      0x100: 1
     \item
-      0x104:0:0
+      0x104: 0
     \item
-      0x108:2:2
+      0x108: 2
     \item
-      0x10C:1:1
+      0x10C: 1
     \item
-      0x110:0:0
+      0x110: 0
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:5:5
+      \$a1: 5
     \item
-      \$a2:4:4
+      \$a2: 4
     \item
-      \$v0::708
+      \$v0: =\textgreater{} 708
     \item
-      0x100:2:2
+      0x100: 2
     \item
-      0x104:3:3
+      0x104: 3
     \item
-      0x108:0:0
+      0x108: 0
     \item
-      0x10C:1:1
+      0x10C: 1
     \item
-      0x110:0:0
+      0x110: 0
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:4:4
+      \$a1: 4
     \item
-      \$a2:10:10
+      \$a2: 10
     \item
-      \$v0::2193
+      \$v0: =\textgreater{} 2193
     \item
-      0x100:2:2
+      0x100: 2
     \item
-      0x104:1:1
+      0x104: 1
     \item
-      0x108:9:9
+      0x108: 9
     \item
-      0x10C:3:3
+      0x10C: 3
     \end{itemize}
   \end{itemize}
 \item
@@ -1721,77 +1616,77 @@ Exit:
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:8:8
+      \$a1: 8
     \item
-      \$v0::19
+      \$v0: =\textgreater{} 19
     \item
-      0x100:1:1
+      0x100: 1
     \item
-      0x104:2:2
+      0x104: 2
     \item
-      0x108:3:3
+      0x108: 3
     \item
-      0x10C:3:3
+      0x10C: 3
     \item
-      0x110:7:7
+      0x110: 7
     \item
-      0x114:5:5
+      0x114: 5
     \item
-      0x118:2:2
+      0x118: 2
     \item
-      0x11C:9:9
+      0x11C: 9
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:6:6
+      \$a1: 6
     \item
-      \$v0::9
+      \$v0: =\textgreater{} 9
     \item
-      0x100:4:4
+      0x100: 4
     \item
-      0x104:0:0
+      0x104: 0
     \item
-      0x108:2:2
+      0x108: 2
     \item
-      0x10C:8:8
+      0x10C: 8
     \item
-      0x110:7:7
+      0x110: 7
     \item
-      0x114:1:1
+      0x114: 1
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:9:9
+      \$a1: 9
     \item
-      \$v0::20
+      \$v0: =\textgreater{} 20
     \item
-      0x100:1:1
+      0x100: 1
     \item
-      0x104:1:1
+      0x104: 1
     \item
-      0x108:5:5
+      0x108: 5
     \item
-      0x10C:8:8
+      0x10C: 8
     \item
-      0x110:3:3
+      0x110: 3
     \item
-      0x114:2:2
+      0x114: 2
     \item
-      0x118:0:0
+      0x118: 0
     \item
-      0x11C:9:9
+      0x11C: 9
     \item
-      0x120:7:7
+      0x120: 7
     \end{itemize}
   \end{itemize}
 \item
@@ -1802,69 +1697,69 @@ Exit:
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:6:6
+      \$a1: 6
     \item
-      \$v0::2
+      \$v0: =\textgreater{} 2
     \item
-      0x100:--1:--1
+      0x100: --1
     \item
-      0x104:1:1
+      0x104: 1
     \item
-      0x108:1:1
+      0x108: 1
     \item
-      0x10C:0:0
+      0x10C: 0
     \item
-      0x110:1:1
+      0x110: 1
     \item
-      0x114:--1:--1
+      0x114: --1
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:6:6
+      \$a1: 6
     \item
-      \$v0::4
+      \$v0: =\textgreater{} 4
     \item
-      0x100:7:7
+      0x100: 7
     \item
-      0x104:1:1
+      0x104: 1
     \item
-      0x108:1:1
+      0x108: 1
     \item
-      0x10C:4:4
+      0x10C: 4
     \item
-      0x110:--4:--4
+      0x110: --4
     \item
-      0x114:--18:--18
+      0x114: --18
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:7:7
+      \$a1: 7
     \item
-      \$v0::3
+      \$v0: =\textgreater{} 3
     \item
-      0x100:0:0
+      0x100: 0
     \item
-      0x104:1:1
+      0x104: 1
     \item
-      0x108:1:1
+      0x108: 1
     \item
-      0x10C:--5:--5
+      0x10C: --5
     \item
-      0x110:1:1
+      0x110: 1
     \item
-      0x114:2:2
+      0x114: 2
     \item
-      0x118:9:9
+      0x118: 9
     \end{itemize}
   \end{itemize}
 \item
@@ -1875,49 +1770,49 @@ Exit:
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:5:5
+      \$a1: 5
     \item
-      0x100:5:1
+      0x100: 5 =\textgreater{} 1
     \item
-      0x104:4:2
+      0x104: 4 =\textgreater{} 2
     \item
-      0x108:3:3
+      0x108: 3
     \item
-      0x10C:2:4
+      0x10C: 2 =\textgreater{} 4
     \item
-      0x110:1:5
+      0x110: 1 =\textgreater{} 5
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:6:6
+      \$a1: 6
     \item
-      0x100:6:11
+      0x100: 6 =\textgreater{} 11
     \item
-      0x104:2:3
+      0x104: 2 =\textgreater{} 3
     \item
-      0x108:1:4
+      0x108: 1 =\textgreater{} 4
     \item
-      0x10C:4:1
+      0x10C: 4 =\textgreater{} 1
     \item
-      0x110:3:2
+      0x110: 3 =\textgreater{} 2
     \item
-      0x114:11:6
+      0x114: 11 =\textgreater{} 6
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:1:1
+      \$a1: 1
     \item
-      0x100:5:5
+      0x100: 5
     \end{itemize}
   \end{itemize}
 \end{enumerate}
@@ -2146,7 +2041,7 @@ MIPS резервують окремий регістр, названий гло
 \end{enumerate}
 \section{Комп'ютерний практикум №6}
 
-\textbf{Тема}: Стек \textbf{Мета}: FIXME
+\textbf{Тема}: Стек \textbf{Мета}:FIXME
 
 \subsection{Теоретичні відомості.}
 
@@ -2353,31 +2248,31 @@ add # a0, a1 $, $ a0 # додаємо n до acc
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:12:12
+      \$a0: 12
     \item
-      \$a1:18:18
+      \$a1: 18
     \item
-      \$v0::6
+      \$v0: =\textgreater{} 6
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:36:36
+      \$a0: 36
     \item
-      \$a1:54:54
+      \$a1: 54
     \item
-      \$v0::18
+      \$v0: =\textgreater{} 18
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:117:117
+      \$a0: 117
     \item
-      \$a1:1:1
+      \$a1: 1
     \item
-      \$v0::1
+      \$v0: =\textgreater{} 1
     \end{itemize}
   \end{itemize}
 \item
@@ -2388,31 +2283,31 @@ add # a0, a1 $, $ a0 # додаємо n до acc
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:16:16
+      \$a0: 16
     \item
-      \$a1:2:2
+      \$a1: 2
     \item
-      \$v0::4
+      \$v0: =\textgreater{} 4
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:131:131
+      \$a0: 13131
     \item
-      \$a1:2:2
+      \$a1: 2
     \item
-      \$v0::5
+      \$v0: =\textgreater{} 5
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:15:15
+      \$a0: 15
     \item
-      \$a1:2:2
+      \$a1: 2
     \item
-      \$v0::0
+      \$v0: =\textgreater{} 0
     \end{itemize}
   \end{itemize}
 \item
@@ -2423,31 +2318,31 @@ add # a0, a1 $, $ a0 # додаємо n до acc
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:5:5
+      \$a0: 5
     \item
-      \$a1:6:6
+      \$a1: 6
     \item
-      \$v0::30
+      \$v0: =\textgreater{} 30
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:6:6
+      \$a0: 6
     \item
-      \$a1:8:8
+      \$a1: 8
     \item
-      \$v0::24
+      \$v0: =\textgreater{} 24
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:3:3
+      \$a0: 3
     \item
-      \$a1:27:27
+      \$a1: 27
     \item
-      \$v0::27
+      \$v0: =\textgreater{} 27
     \end{itemize}
   \end{itemize}
 \item
@@ -2459,25 +2354,25 @@ add # a0, a1 $, $ a0 # додаємо n до acc
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:9:9
+      \$a0: 9
     \item
-      \$v0::34
+      \$v0: =\textgreater{} 34
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:10:10
+      \$a0: 10
     \item
-      \$v0::55
+      \$v0: =\textgreater{} 55
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:3:3
+      \$a0: 3
     \item
-      \$v0::2
+      \$v0: =\textgreater{} 2
     \end{itemize}
   \end{itemize}
 \item
@@ -2491,93 +2386,93 @@ add # a0, a1 $, $ a0 # додаємо n до acc
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:7:7
+      \$a1: 7
     \item
-      \$a2:0x200:0x200
+      \$a2: 0x200x200
     \item
-      \$v0::5
+      \$v0: =\textgreater{} 5
     \item
-      0x100:1:1
+      0x100: 1
     \item
-      0x104:7:7
+      0x104: 7
     \item
-      0x108:2:2
+      0x108: 2
     \item
-      0x10C:1:1
+      0x10C: 1
     \item
-      0x110:30:30
+      0x110: 30
     \item
-      0x114:7:7
+      0x114: 7
     \item
-      0x118:3:3
+      0x118: 3
     \item
-      0x200::1
+      0x200: =\textgreater{} 1
     \item
-      0x204::7
+      0x204: =\textgreater{} 7
     \item
-      0x208::2
+      0x208: =\textgreater{} 2
     \item
-      0x20C::30
+      0x20C: =\textgreater{} 30
     \item
-      0x210::3
+      0x210: =\textgreater{} 3
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:6:6
+      \$a1: 6
     \item
-      \$a2:0x200:0x200
+      \$a2: 0x200x200
     \item
-      \$v0::3
+      \$v0: =\textgreater{} 3
     \item
-      0x100:2:2
+      0x100: 2
     \item
-      0x104:3:3
+      0x104: 3
     \item
-      0x108:0:0
+      0x108: 0
     \item
-      0x10C:0:0
+      0x10C: 0
     \item
-      0x110:0:0
+      0x110: 0
     \item
-      0x114:2:2
+      0x114: 2
     \item
-      0x200::2
+      0x200: =\textgreater{} 2
     \item
-      0x204::3
+      0x204: =\textgreater{} 3
     \item
-      0x208::0
+      0x208: =\textgreater{} 0
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:6:6
+      \$a1: 6
     \item
-      \$a2:0x200:0x200
+      \$a2: 0x200x200
     \item
-      \$v0::1
+      \$v0: =\textgreater{} 1
     \item
-      0x100:2:2
+      0x100: 2
     \item
-      0x104:2:2
+      0x104: 2
     \item
-      0x108:2:2
+      0x108: 2
     \item
-      0x10C:2:2
+      0x10C: 2
     \item
-      0x110:2:2
+      0x110: 2
     \item
-      0x114:2:2
+      0x114: 2
     \item
-      0x200::2
+      0x200: =\textgreater{} 2
     \end{itemize}
   \end{itemize}
 \item
@@ -2588,67 +2483,67 @@ add # a0, a1 $, $ a0 # додаємо n до acc
     Приклад 1:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:5:5
+      \$a1: 5
     \item
-      \$a2:2:2
+      \$a2: 2
     \item
-      0x100:1:5
+      0x100: 1 =\textgreater{} 5
     \item
-      0x104:3:7
+      0x104: 3 =\textgreater{} 7
     \item
-      0x108:5:9
+      0x108: 5 =\textgreater{} 9
     \item
-      0x10C:7:1
+      0x10C: 7 =\textgreater{} 1
     \item
-      0x110:9:3
+      0x110: 9 =\textgreater{} 3
     \end{itemize}
   \item
     Приклад 2:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:5:5
+      \$a1: 5
     \item
-      \$a2:3:3
+      \$a2: 3
     \item
-      0x100:0:6
+      0x100: 0 =\textgreater{} 6
     \item
-      0x104:2:4
+      0x104: 2 =\textgreater{} 4
     \item
-      0x108:--1:0
+      0x108: --1 =\textgreater{} 0
     \item
-      0x10C:6:2
+      0x10C: 6 =\textgreater{} 2
     \item
-      0x110:4:--1
+      0x110: 4 =\textgreater{} --1
     \end{itemize}
   \item
     Приклад 3:
     \begin{itemize}
     \item
-      \$a0:0x100:0x100
+      \$a0: 0x100x100
     \item
-      \$a1:8:8
+      \$a1: 8
     \item
-      \$a2:5:5
+      \$a2: 5
     \item
-      0x100:3:8
+      0x100: 3 =\textgreater{} 8
     \item
-      0x104:27:11
+      0x104: 27 =\textgreater{} 11
     \item
-      0x108:9:13
+      0x108: 9 =\textgreater{} 13
     \item
-      0x10C:0:3
+      0x10C: 0 =\textgreater{} 3
     \item
-      0x110:1:27
+      0x110: 1 =\textgreater{} 27
     \item
-      0x114:8:9
+      0x114: 8 =\textgreater{} 9
     \item
-      0x118:11:0
+      0x118: 11 =\textgreater{} 0
     \item
-      0x11C:13:1
+      0x11C: 13 =\textgreater{} 1
     \end{itemize}
   \end{itemize}
 \end{enumerate}
