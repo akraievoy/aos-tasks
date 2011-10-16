@@ -478,21 +478,30 @@ addi $s3, $s3, 4 # $s3= $s3+ 4
   \item
     Приклад 1:
 
-    \$a0: 65 =\textgreater{} 67 \$a1: 3 \$a2: --1 \$v0: =\textgreater{}
-    0
-
+    \begin{verbatim}
+$a0: 65 => 67
+$a1: 3
+$a2: -1
+$v0: => 0
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 9 =\textgreater{} 11 \$a1: 5 \$a2: --2 \$v0: =\textgreater{}
-    0
-
+    \begin{verbatim}
+$a0: 9 => 11
+$a1: 5
+$a2: -2
+$v0: => 0
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 23 =\textgreater{} 25 \$a1: 5 \$a2: 0 \$v0: =\textgreater{}
-    4
-
+    \begin{verbatim}
+$a0: 23 => 25
+$a1: 5
+$a2: 0
+$v0: => 4
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Остача та декремент} Зберегти у регістр \$v0 остачу від
@@ -503,20 +512,30 @@ addi $s3, $s3, 4 # $s3= $s3+ 4
   \item
     Приклад 1:
 
-    \$a0: 65 =\textgreater{} 63 \$a1: 5 \$a2: 3 \$v0: =\textgreater{}
-    4
-
+    \begin{verbatim}
+$a0: 65 => 63
+$a1: 5
+$a2: 3
+$v0: => 4
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 9 =\textgreater{} 7 \$a1: 11 \$a2: 4 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 9 => 7
+$a1: 11
+$a2: 4
+$v0: => 0
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 23 =\textgreater{} 21 \$a1: 102 \$a2: 64 \$v0:
-    =\textgreater{} 107
-
+    \begin{verbatim}
+$a0: 23 => 21
+$a1: 102
+$a2: 64
+$v0: => 107
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Сума і добуток} Дадати вміст регістрів \$a0, \$a1, \$a2,
@@ -525,18 +544,33 @@ addi $s3, $s3, 4 # $s3= $s3+ 4
   \item
     Приклад 1:
 
-    \$a0: 1 \$a1: 2 \$a2: 3 \$a3: 4 \$v0: =\textgreater{} 24
-
+    \begin{verbatim}
+$a0: 1
+$a1: 2
+$a2: 3
+$a3: 4
+$v0: => 24
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 1 \$a1: --2 \$a2: 3 \$a3: --4 \$v0: =\textgreater{} --8
-
+    \begin{verbatim}
+$a0: 1
+$a1: -2
+$a2: 3
+$a3: -4
+$v0:  => -8
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 11 \$a1: 12 \$a2: 13 \$a3: 33 \$v0: =\textgreater{} 1188
-
+    \begin{verbatim}
+$a0: 11
+$a1: 12
+$a2: 13
+$a3: 33
+$v0: => 1188
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Різниця і остача} Відняти вміст регістру \$a1 від вмісту
@@ -546,18 +580,30 @@ addi $s3, $s3, 4 # $s3= $s3+ 4
   \item
     Приклад 1:
 
-    \$a0: 65 \$a1: 3 \$a2: 33 \$v0: =\textgreater{} 29
-
+    \begin{verbatim}
+$a0: 65
+$a1: 3
+$a2: 33
+$v0: => 29
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 65 \$a1: 65 \$a2: 33 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 65
+$a1: 65
+$a2: 33
+$v0: => 0
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 65 \$a1: 32 \$a2: 33 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 65
+$a1: 32
+$a2: 33
+$v0: => 0
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Множення} Перемножити вміст регістрів \$a0, \$a1, \$a2 та
@@ -567,17 +613,33 @@ addi $s3, $s3, 4 # $s3= $s3+ 4
   \item
     Приклад 1:
 
-    \$a0: 1 \$a1: 2 \$a2: 3 \$a3: 5 \$v0: =\textgreater{} 1
-
+    \begin{verbatim}
+$a0: 1
+$a1: 2
+$a2: 3
+$a3: 5
+$v0: => 1
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 11 \$a1: 12 \$a2: 2 \$a3: 264 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 11
+$a1: 12
+$a2: 2
+$a3: 264
+$v0: => 0
+\end{verbatim}
   \item
-    Приклад \$1: \$a0: 5 \$a1: 4 \$a2: 0 \$a3: --8 \$v0:
-    =\textgreater{} 8
+    Приклад \$1:
 
+    \begin{verbatim}
+$a0: 5
+$a1: 4
+$a2: 0
+$a3: -8
+$v0: => 8
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Ділення} Остачу від ділення вмісту регістру \$a0 на вміст
@@ -588,18 +650,30 @@ addi $s3, $s3, 4 # $s3= $s3+ 4
   \item
     Приклад 1:
 
-    \$a0: 3 \$a1: 2 \$a2: 5 \$v0: =\textgreater{} 5
-
+    \begin{verbatim}
+$a0: 3
+$a1: 2
+$a2: 5
+$v0: => 5
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 13 \$a1: 8 \$a2: 55 \$v0: =\textgreater{} 11
-
+    \begin{verbatim}
+$a0: 13
+$a1: 8
+$a2: 55
+$v0: => 11
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 1023 \$a1: 1024 \$a2: 1022 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 1023
+$a1: 1024
+$a2: 1022
+$v0: => 0
+\end{verbatim}
   \end{itemize}
 \end{enumerate}
 \section{Комп'ютерний практикум №2}
@@ -851,21 +925,39 @@ sw $t0,48( $s3 ) # stores h+ A[8] back into A[12]
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 0x104 \$a2: 0x0FC 0x100: 17 0x104: 13 0x108: 5
-    \$v0: =\textgreater{} 25
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 0x104
+$a2: 0x0FC
+0x100: 17
+0x104: 13
+0x108: 5
+$v0: => 25
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x100 \$a1: 0x104 \$a2: 0x108 0x100: 9 0x104: --3 0x114: 6
-    \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 0x104
+$a2: 0x108
+0x100: 9
+0x104: -3
+0x114: 6
+$v0: => 0
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x104 \$a1: 0x100 \$a2: 0x200 0x100: --5 0x104: 1 0x20C: --14
-    \$v0: =\textgreater{} 10
-
+    \begin{verbatim}
+$a0: 0x104
+$a1: 0x100
+$a2: 0x200
+0x100: -5
+0x104: 1
+0x20C: -14
+$v0: => 10
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Усереднення} Скласти вміст п'яти слів памяті, що
@@ -876,21 +968,39 @@ sw $t0,48( $s3 ) # stores h+ A[8] back into A[12]
   \item
     Приклад 1:
 
-    \$a0: 0x108 0x100: 1 0x104: 2 0x108: 3 0x10C: 4 0x110: 5 \$v0:
-    =\textgreater{} 15
-
+    \begin{verbatim}
+$a0: 0x108
+0x100: 1
+0x104: 2
+0x108: 3
+0x10C: 4
+0x110: 5
+$v0: => 15
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x108 0x100: 2 0x104: 1 0x108: 4 =\textgreater{} 0 0x10C: --1
-    0x110: --2 \$v0: =\textgreater{} 4
-
+    \begin{verbatim}
+$a0: 0x108
+0x100: 2
+0x104: 1
+0x108: 4 => 0
+0x10C: -1
+0x110: -2
+$v0: => 4
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x208 0x200: 3 0x204: 5 0x208: 8 =\textgreater{} 10 0x20C: 13
-    0x210: 21 \$v0: =\textgreater{} 50
-
+    \begin{verbatim}
+$a0: 0x208
+0x200: 3
+0x204: 5
+0x208: 8 => 10
+0x20C: 13
+0x210: 21
+$v0: => 50
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Інкремент} Збільшити значення у пам'яті за адресами з
@@ -900,20 +1010,35 @@ sw $t0,48( $s3 ) # stores h+ A[8] back into A[12]
   \item
     Приклад 1:
 
-    \$a0: 0x0F8 \$a1: 0x208 \$a2: 1 \$a3: --1 0x100: 0 =\textgreater{}
-    1 0x200: 0 =\textgreater{} --1
-
+    \begin{verbatim}
+$a0: 0x0F8
+$a1: 0x208
+$a2: 1
+$a3: -1
+0x100: 0 => 1
+0x200: 0 => -1
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x200 \$a1: 0x200 \$a2: 1 \$a3: --1 0x208: 0 =\textgreater{}
-    1 0x1F8: 0 =\textgreater{} --1
-
+    \begin{verbatim}
+$a0: 0x200
+$a1: 0x200
+$a2: 1
+$a3: -1
+0x208: 0 => 1
+0x1F8: 0 => -1
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x1F8 \$a1: 0x208 \$a2: 128 \$a3: --128 0x200: 1024
-
+    \begin{verbatim}
+$a0: 0x1F8
+$a1: 0x208
+$a2: 128
+$a3: -128
+0x200: 1024
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Обмін} Обміняти місцями у пам'яті значення за адресами з
@@ -923,20 +1048,32 @@ sw $t0,48( $s3 ) # stores h+ A[8] back into A[12]
   \item
     Приклад 1:
 
-    \$a0: 0x110 \$a1: 0x210 0x100: 2 =\textgreater{} 1 0x200: 1
-    =\textgreater{} 2 \$v0: =\textgreater{} 2
-
+    \begin{verbatim}
+$a0: 0x110
+$a1: 0x210
+0x100: 2 => 1
+0x200: 1 => 2
+$v0: => 2
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x110 \$a1: 0x110 0x100: 5 \$v0: =\textgreater{} 25
-
+    \begin{verbatim}
+$a0: 0x110
+$a1: 0x110
+0x100: 5
+$v0: => 25
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x110 \$a1: 0x210 0x100: 0 =\textgreater{} 768 0x200: 768
-    =\textgreater{} 0 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 0x110
+$a1: 0x210
+0x100: 0 => 768
+0x200: 768 => 0
+$v0: => 0
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Добуток} Обчислити добуток значень, розташованих за
@@ -946,21 +1083,37 @@ sw $t0,48( $s3 ) # stores h+ A[8] back into A[12]
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 0x100 \$a2: 0x100 0x0FC: 2 0x100: 3 0x104: 5
-    \$v0: =\textgreater{} 30
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 0x100
+$a2: 0x100
+0x0FC: 2
+0x100: 3
+0x104: 5
+$v0: => 30
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x104 \$a1: 0x100 \$a2: 0x0FC 0x100: 3 \$v0: =\textgreater{}
-    27
-
+    \begin{verbatim}
+$a0: 0x104
+$a1: 0x100
+$a2: 0x0FC
+0x100: 3
+$v0: => 27
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x200 \$a1: 0x200 \$a2: 0x200 0x1FC: 2 0x200: --3 0x204: 5
-    \$v0: =\textgreater{} --30
-
+    \begin{verbatim}
+$a0: 0x200
+$a1: 0x200
+$a2: 0x200
+0x1FC: 2
+0x200: -3
+0x204: 5
+$v0: => -30
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Подвійна адресація} Обчислити суму значень, адреси яких
@@ -970,22 +1123,44 @@ sw $t0,48( $s3 ) # stores h+ A[8] back into A[12]
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 0x100 \$a2: 0x100 0x0FC: 0x200 0x100: 0x204
-    0x104: 0x208 0x200: 1 0x204: 2 0x208: 4 \$v0: =\textgreater{} 7
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 0x100
+$a2: 0x100
+0x0FC: 0x200
+0x100: 0x204
+0x104: 0x208
+0x200: 1
+0x204: 2
+0x208: 4
+$v0: => 7
+\end{verbatim}
   \item
-    Приклад \$1:
+    Приклад 2:
 
-    \$a0: 0x104 \$a1: 0x100 \$a2: 0x0FC 0x100: 0x200 0x200: 1 \$v0:
-    =\textgreater{} 3
-
+    \begin{verbatim}
+$a0: 0x104
+$a1: 0x100
+$a2: 0x0FC
+0x100: 0x200
+0x200: 1
+$v0: => 3
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x100 \$a1: 0x200 \$a2: 0x300 0x0FC: 0x408 0x200: 0x404
-    0x304: 0x400 0x400: --1 0x404: 2 0x408: --4 \$v0: =\textgreater{}
-    --3
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 0x200
+$a2: 0x300
+0x0FC: 0x408
+0x200: 0x404
+0x304: 0x400
+0x400: -1
+0x404: 2
+0x408: -4
+$v0: => -3
+\end{verbatim}
   \end{itemize}
 \end{enumerate}
 \section{Комп'ютерний практикум №3}
@@ -1170,18 +1345,27 @@ unsigned (situ) та set on less than immediate unsigned
   \item
     Приклад 1:
 
-    \$a0: 19 \$a1: 19 \$v0: =\textgreater{} 1
-
+    \begin{verbatim}
+$a0: 19
+$a1: 19
+$v0:  => 1
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 25 \$a1: 2 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 25
+$a1: 2
+$v0: => 0
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 14 \$a1: --14 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 14
+$a1: -14
+$v0: => 0
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Відсутність спільних бітів} Виконати «логічне і» регістрів
@@ -1191,18 +1375,27 @@ unsigned (situ) та set on less than immediate unsigned
   \item
     Приклад 1:
 
-    \$a0: 12 \$a1: 48 \$v0: =\textgreater{} 1
-
+    \begin{verbatim}
+$a0: 12
+$a1: 48
+$v0:  => 1
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 10 \$a1: 5 \$v0: =\textgreater{} 1
-
+    \begin{verbatim}
+$a0: 10
+$a1: 5
+$v0:  => 1
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 111 \$a1: 2 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 111
+$a1: 2
+$v0:  => 0
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Рівність слів памяті} Встановити \$v0 в 1, якщо дані слів
@@ -1213,20 +1406,33 @@ unsigned (situ) та set on less than immediate unsigned
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 0x104 \$v0: =\textgreater{} 1 0x100: 25 0x104:
-    25
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 0x104
+$v0: => 1
+0x100: 25
+0x104: 25
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x100 \$a1: 0x104 \$v0: =\textgreater{} 0 0x100: 0 0x104: 10
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 0x104
+$v0: => 0
+0x100: 0
+0x104: 10
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x400 \$a1: 0x800 \$v0: =\textgreater{} 1 0x400: 117 0x800:
-    117
-
+    \begin{verbatim}
+$a0: 0x400
+$a1: 0x800
+$v0: => 1
+0x400: 117
+0x800: 117
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Інкремент і нерівність} Збільшити вміст регістра \$a0 на 2,
@@ -1236,18 +1442,24 @@ unsigned (situ) та set on less than immediate unsigned
   \item
     Приклад 1:
 
-    \$a0: 5 =\textgreater{} 7 \$v0: =\textgreater{} 1
-
+    \begin{verbatim}
+$a0: 5 => 7
+$v0:  => 1
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: --2 =\textgreater{} 0 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: -2 => 0
+$v0:  => 0
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: --8 =\textgreater{} --6 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: -8 => -6
+$v0:  => 0
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Віднімання та нерівність} Зменшити вміст регістра \$a0 на
@@ -1257,18 +1469,27 @@ unsigned (situ) та set on less than immediate unsigned
   \item
     Приклад 1:
 
-    \$a0: 2 =\textgreater{} --1 \$a1: 3 \$v0: =\textgreater{} 1
-
+    \begin{verbatim}
+$a0: 2 => -1
+$a1: 3
+$v0:  => 1
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 3 =\textgreater{} 0 \$a1: 0 \$v0: =\textgreater{} 0
-
+    \begin{verbatim}
+$a0: 3 => 0
+$a1: 0
+$v0:  => 0
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: --25 =\textgreater{} --22 \$a1: --3 \$v0: =\textgreater{} 1
-
+    \begin{verbatim}
+$a0: -25 => -22
+$a1: -3
+$v0:  => 1
+\end{verbatim}
   \end{itemize}
 \end{enumerate}
 \section{Комп'ютерний практикум №4}
@@ -1382,20 +1603,35 @@ Exit:
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 5 \$v0: =\textgreater{} 5 0x100: 1 0x104: 2
-    0x108: 3 0x10C: 4 0x110: 5
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 5
+$v0: => 5
+0x100: 1
+0x104: 2
+0x108: 3
+0x10C: 4
+0x110: 5
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x100 \$a1: 7 \$v0: =\textgreater{} 0 0x100: --1 0x104: --2
-    0x108: --7 0x10C: 0 0x110: --11 0x114: --16 0x118: --9
+    \begin{verbatim}
+$a0: 0x100
+$a1: 7
+$v0: => 0
+0x100: -1
+0x104: -2
+0x108: -7
+0x10C: 0
+0x110: -11
+0x114: -16
+0x118: -9
+\end{verbatim}
+  \item
+    Приклад 3:
 
-  \end{itemize}
-\item
-  Приклад 3:
-
-  \begin{verbatim}
+    \begin{verbatim}
 $a0: 0x100
 $a1: 7
 $v0: => -1
@@ -1407,6 +1643,7 @@ $v0: => -1
 0x114: -21
 0x118: -9
 \end{verbatim}
+  \end{itemize}
 \item
   \textbf{Входження мінімуму масива} Задано цілочисельний масив
   (адреса нульового елемента в \$a0, довжина масива в \$a1).
@@ -1416,21 +1653,44 @@ $v0: => -1
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 5 \$v0: =\textgreater{} 1 0x100: 1 0x104: 2
-    0x108: 3 0x10C: 8 0x110: 5
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 5
+$v0: => 1
+0x100: 1
+0x104: 2
+0x108: 3
+0x10C: 8
+0x110: 5
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x100 \$a1: 6 \$v0: =\textgreater{} 3 0x100: --1 0x104: 2
-    0x108: 3 0x10C: --1 0x110: 5 0x114: --1
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 6
+$v0: => 3
+0x100: -1
+0x104: 2
+0x108: 3
+0x10C: -1
+0x110: 5
+0x114: -1
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x100 \$a1: 6 \$v0: =\textgreater{} 6 0x100: 8 0x104: 8
-    0x108: 8 0x10C: 8 0x110: 8 0x114: 8
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 6
+$v0: => 6
+0x100: 8
+0x104: 8
+0x108: 8
+0x10C: 8
+0x110: 8
+0x114: 8
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Розкладання числа} Число задається цілочисельним масивом
@@ -1442,21 +1702,44 @@ $v0: => -1
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 5 \$a2: 3 \$v0: =\textgreater{} 102 0x100: 0
-    0x104: 1 0x108: 2 0x10C: 0 0x110: 1
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 5
+$a2: 3
+$v0: => 102
+0x100: 0
+0x104: 1
+0x108: 2
+0x10C: 0
+0x110: 1
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x100 \$a1: 5 \$a2: 4 \$v0: =\textgreater{} 708 0x100: 0
-    0x104: 1 0x108: 0 0x10C: 3 0x110: 2
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 5
+$a2: 4
+$v0: => 708
+0x100: 0
+0x104: 1
+0x108: 0
+0x10C: 3
+0x110: 2
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x100 \$a1: 4 \$a2: 10 \$v0: =\textgreater{} 2193 0x100: 3
-    0x104: 9 0x108: 1 0x10C: 2
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 4
+$a2: 10
+$v0: => 2193
+0x100: 3
+0x104: 9
+0x108: 1
+0x10C: 2
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Сума елементів з непарним індексом} Задано цілочисельний
@@ -1467,21 +1750,50 @@ $v0: => -1
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 8 \$v0: =\textgreater{} 19 0x100: 1 0x104: 2
-    0x108: 3 0x10C: 3 0x110: 7 0x114: 5 0x118: 2 0x11C: 9
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 8
+$v0: => 19
+0x100: 1
+0x104: 2
+0x108: 3
+0x10C: 3
+0x110: 7
+0x114: 5
+0x118: 2
+0x11C: 9
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x100 \$a1: 6 \$v0: =\textgreater{} 9 0x100: 4 0x104: 0
-    0x108: 2 0x10C: 8 0x110: 7 0x114: 1
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 6
+$v0: => 9
+0x100: 4
+0x104: 0
+0x108: 2
+0x10C: 8
+0x110: 7
+0x114: 1
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x100 \$a1: 9 \$v0: =\textgreater{} 4 0x100: 1 0x104: 1
-    0x108: 5 0x10C: --8 0x110: 3 0x114: 2 0x118: 0 0x11C: 9 0x120: --7
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 9
+$v0: => 4
+0x100: 1
+0x104: 1
+0x108: 5
+0x10C: -8
+0x110: 3
+0x114: 2
+0x118: 0
+0x11C: 9
+0x120: -7
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Додатна підпослідовність} Задано цілочисельний масив
@@ -1492,21 +1804,46 @@ $v0: => -1
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 6 \$v0: =\textgreater{} 2 0x100: --1 0x104: 1
-    0x108: 1 0x10C: 0 0x110: 1 0x114: --1
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 6
+$v0: => 2
+0x100: -1
+0x104: 1
+0x108: 1
+0x10C: 0
+0x110: 1
+0x114: -1
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x100 \$a1: 6 \$v0: =\textgreater{} 4 0x100: 7 0x104: 1
-    0x108: 1 0x10C: 4 0x110: --4 0x114: --18
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 6
+$v0: => 4
+0x100: 7
+0x104: 1
+0x108: 1
+0x10C: 4
+0x110: -4
+0x114: -18
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x100 \$a1: 7 \$v0: =\textgreater{} 3 0x100: 0 0x104: 1
-    0x108: 1 0x10C: --5 0x110: 1 0x114: 2 0x118: 9
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 7
+$v0: => 3
+0x100: 0
+0x104: 1
+0x108: 1
+0x10C: -5
+0x110: 1
+0x114: 2
+0x118: 9
+\end{verbatim}
   \end{itemize}
 \item
   \textbf{Обернення масиву} Задано масив натуральних чисел (адреса
@@ -1516,23 +1853,36 @@ $v0: => -1
   \item
     Приклад 1:
 
-    \$a0: 0x100 \$a1: 5 0x100: 5 =\textgreater{} 1 0x104: 4
-    =\textgreater{} 2 0x108: 3 0x10C: 2 =\textgreater{} 4 0x110: 1
-    =\textgreater{} 5
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 5
+0x100: 5 => 1
+0x104: 4 => 2
+0x108: 3
+0x10C: 2 => 4
+0x110: 1 => 5
+\end{verbatim}
   \item
     Приклад 2:
 
-    \$a0: 0x100 \$a1: 6 0x100: 6 =\textgreater{} 11 0x104: 2
-    =\textgreater{} 3 0x108: 1 =\textgreater{} 4 0x10C: 4
-    =\textgreater{} 1 0x110: 3 =\textgreater{} 2 0x114: 11
-    =\textgreater{} 6
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 6
+0x100: 6 => 11
+0x104: 2 => 3
+0x108: 1 => 4
+0x10C: 4 => 1
+0x110: 3 => 2
+0x114: 11 => 6
+\end{verbatim}
   \item
     Приклад 3:
 
-    \$a0: 0x100 \$a1: 1 0x100: 5
-
+    \begin{verbatim}
+$a0: 0x100
+$a1: 1
+0x100: 5
+\end{verbatim}
   \end{itemize}
 \end{enumerate}
 \section{Комп'ютерний практикум №5}
